@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpendFlix.Mvc", "SpendFlix.Mvc\SpendFlix.Mvc.csproj", "{33A63858-8C0F-4123-97FF-342AA342F7BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpendFlix.Data", "SpendFlix.Data\SpendFlix.Data.csproj", "{C15E8167-0E6C-468C-BF3A-949CBACF4632}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{33A63858-8C0F-4123-97FF-342AA342F7BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33A63858-8C0F-4123-97FF-342AA342F7BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33A63858-8C0F-4123-97FF-342AA342F7BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33A63858-8C0F-4123-97FF-342AA342F7BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C15E8167-0E6C-468C-BF3A-949CBACF4632}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C15E8167-0E6C-468C-BF3A-949CBACF4632}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C15E8167-0E6C-468C-BF3A-949CBACF4632}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C15E8167-0E6C-468C-BF3A-949CBACF4632}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {14851F94-72DC-434E-99C3-65FA648C2C9A}
+	EndGlobalSection
+EndGlobal
