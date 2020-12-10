@@ -1,14 +1,11 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using SpendFlix.Data;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using SpendFlix.Data.Repository;
 
 namespace SpendFlix.Mvc
 {
@@ -25,8 +22,14 @@ namespace SpendFlix.Mvc
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-
+            services.AddDbContext<SpendFlixContext>(options => options.UseSqlite("Data Source=SpendFlix.db"));
             services.AddEntityFrameworkSqlite();
+            services.AddDbContext<SpendFlixContext>();
+            services.AddSingleton<ISpendFlixContext, SpendFlixContext>();
+            services.AddSingleton<IAdminRepository, AdminRepository>();
+            services.AddSingleton<IPostRepository, PostRepository>();
+            services.AddSingleton<ILinksRepository, LinksRepository>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
