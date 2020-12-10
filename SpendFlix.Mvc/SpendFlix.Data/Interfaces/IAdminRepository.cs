@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SpendFlix.Data.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,5 +9,8 @@ namespace SpendFlix.Data.Repository
 {
     public interface IAdminRepository
     {
+        List<Admin> Add();
+        List<Admin> GetUsers();
+        void AddUser();
     }
 }

@@ -1,30 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tugba.seven\\source\\repos\\SpendFlix\\SpendFlix.Mvc\\SpendFlix.Data\\SpendFlix.Data.csproj": {}
+    "C:\\Users\\meliksah.ince\\source\\repos\\SpendFlix\\SpendFlix.Mvc\\SpendFlix.Data\\SpendFlix.Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tugba.seven\\source\\repos\\SpendFlix\\SpendFlix.Mvc\\SpendFlix.Data\\SpendFlix.Data.csproj": {
+    "C:\\Users\\meliksah.ince\\source\\repos\\SpendFlix\\SpendFlix.Mvc\\SpendFlix.Data\\SpendFlix.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tugba.seven\\source\\repos\\SpendFlix\\SpendFlix.Mvc\\SpendFlix.Data\\SpendFlix.Data.csproj",
+        "projectUniqueName": "C:\\Users\\meliksah.ince\\source\\repos\\SpendFlix\\SpendFlix.Mvc\\SpendFlix.Data\\SpendFlix.Data.csproj",
         "projectName": "SpendFlix.Data",
-        "projectPath": "C:\\Users\\tugba.seven\\source\\repos\\SpendFlix\\SpendFlix.Mvc\\SpendFlix.Data\\SpendFlix.Data.csproj",
-        "packagesPath": "C:\\Users\\tugba.seven\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tugba.seven\\source\\repos\\SpendFlix\\SpendFlix.Mvc\\SpendFlix.Data\\obj\\",
+        "projectPath": "C:\\Users\\meliksah.ince\\source\\repos\\SpendFlix\\SpendFlix.Mvc\\SpendFlix.Data\\SpendFlix.Data.csproj",
+        "packagesPath": "C:\\Users\\meliksah.ince\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\meliksah.ince\\source\\repos\\SpendFlix\\SpendFlix.Mvc\\SpendFlix.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\tugba.seven\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\meliksah.ince\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "\\\\ntserver\\sharedtoall\\NugetServer": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -43,6 +45,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.Data.Sqlite.Core": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
               "version": "[5.0.1, )"
@@ -63,7 +69,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v5.0": {
       "SpendFlix.Data/1.0.0": {
         "dependencies": {
+          "Microsoft.Data.Sqlite.Core": "5.0.1",
           "Microsoft.EntityFrameworkCore.Sqlite": "5.0.1"
         },
         "runtime": {
