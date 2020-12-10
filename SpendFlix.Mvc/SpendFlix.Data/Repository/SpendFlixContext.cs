@@ -1,10 +1,29 @@
 ﻿using Microsoft.Data.Sqlite;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using SpendFlix.Data.Models;
+using SpendFlix.Data.Repository;
 using System;
 
 namespace SpendFlix.Data
 {
-    public class Context
+    public class SpendFlixContext : DbContext , ISpendFlixContext
     {
+        private readonly IConfiguration _configuration;
+        public SpendFlixContext(IConfiguration configuration)
+        {
+            this._configuration = configuration;
+        }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseSqlite("Data Source= SpendFlix.db");
+            optionsBuilder.UseSqlite(this._configuration["DBConnectionString"]);
+        }
+
+        public DbSet<Admin> Admin { get; set; }
+        public DbSet<Links> Links { get; set; }
+        public DbSet<Post> Post { get; set; }
 
         public void MyProperty()
         {
