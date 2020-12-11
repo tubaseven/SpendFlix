@@ -172,3 +172,4 @@ C:\Users\meliksah.ince\source\repos\SpendFlix\SpendFlix.Mvc\SpendFlix.Mvc\obj\De
 C:\Users\meliksah.ince\source\repos\SpendFlix\SpendFlix.Mvc\SpendFlix.Mvc\obj\Debug\net5.0\ref\SpendFlix.Mvc.dll
 C:\Users\meliksah.ince\source\repos\SpendFlix\SpendFlix.Mvc\SpendFlix.Mvc\obj\Debug\net5.0\SpendFlix.Mvc.pdb
 C:\Users\meliksah.ince\source\repos\SpendFlix\SpendFlix.Mvc\SpendFlix.Mvc\obj\Debug\net5.0\SpendFlix.Mvc.genruntimeconfig.cache
+C:\Users\tugba.seven\source\repos\SpendFlix\SpendFlix.Mvc\SpendFlix.Mvc\bin\Debug\net5.0\SQLite-net.dll

@@ -6,16 +6,16 @@ namespace SpendFlix.Data
 {
     public class SpendFlixContext : DbContext , ISpendFlixContext
     {
-        //private readonly IConfiguration _configuration;
-        //public SpendFlixContext(IConfiguration configuration)
-        //{
-        //    this._configuration = configuration;
-        //}
+        private readonly IConfiguration _configuration;
+        public SpendFlixContext(IConfiguration configuration)
+        {
+            this._configuration = configuration;
+        }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlite("Data Source= C:\\Users\\meliksah.ince\\source\\repos\\SpendFlix\\SpendFlix.Mvc\\SpendFlix.Data\\bin\\Debug\net5.0\\SpendFlix.db");
-            //optionsBuilder.UseSqlite(this._configuration["DBConnectionString"]);
+            //optionsBuilder.UseSqlite("Data Source = SpendFlix.db");
+            optionsBuilder.UseSqlite(this._configuration["DBConnectionString"]);
         }
 
         //protected override void OnModelCreating(ModelBuilder modelBuilder)

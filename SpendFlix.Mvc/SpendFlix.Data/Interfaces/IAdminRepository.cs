@@ -9,8 +9,8 @@ namespace SpendFlix.Data.Repository
 {
     public interface IAdminRepository
     {
-        List<Admin> Add();
         List<Admin> GetUsers();
         void AddUser();
+
     }
 }

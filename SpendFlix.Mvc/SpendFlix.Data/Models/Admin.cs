@@ -1,13 +1,12 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
+﻿using SQLite;
+using System;
 
 namespace SpendFlix.Data.Models
 {
     [Table("Admin")]
     public class Admin
     {
-        [Key]
+        [PrimaryKey, AutoIncrement, Column("Id")]
         public int Id { get; set; }
         public string Username { get; set; }
         public string HashPassword { get; set; }

@@ -14,19 +14,18 @@ namespace SpendFlix.Data.Repository
             this._spendFlixContext = _spendFlixContext;
         }
 
-        public List<Admin> Add()
+        public List<Admin> GetUsers()
         {
-            using (var db = new SpendFlixContext())
-            {
-                var product = new Admin() { Username = "Tuğba", Email = "asd", Active = true, HashPassword = "asdadsfas", CreationDate = DateTime.Now };
+            //using (var db = new SpendFlixContext())
+            //{
+                //var product = new Admin() { Username = "Tuğba", Email = "asd", HashPassword = "asdadsfas", Active = true,  CreationDate = DateTime.Now };
 
-                db.Admin.Add(product);
-                db.SaveChanges();
+                //_spendFlixContext.Admin.Add(product);
+                //_spendFlixContext.SaveChanges();
 
                 return _spendFlixContext.Admin.ToList();
-            }
+            //}
                 
-            //_spendFlixContext.Admin.
         }
 
 
@@ -63,42 +62,42 @@ namespace SpendFlix.Data.Repository
             }
 
         }
-        public List<Admin> GetUsers()
-        {
-            List<Admin> userList = new List<Admin>();
-            try
-            {
-                var connectionString = new SqliteConnectionStringBuilder();
-                connectionString.DataSource = "./SpendFlix.db";
+        //public List<Admin> GetUsers()
+        //{
+        //    List<Admin> userList = new List<Admin>();
+        //    try
+        //    {
+        //        var connectionString = new SqliteConnectionStringBuilder();
+        //        connectionString.DataSource = "./SpendFlix.db";
 
-                using (var connection = new SqliteConnection(connectionString.ConnectionString))
-                {
-                    connection.Open();
+        //        using (var connection = new SqliteConnection(connectionString.ConnectionString))
+        //        {
+        //            connection.Open();
 
-                    string sql = "SELECT * FROM Admin" ;
+        //            string sql = "SELECT * FROM Admin" ;
                     
-                    using (SqliteCommand cmd = new SqliteCommand(sql, connection))
-                    {
-                        using (SqliteDataReader reader = cmd.ExecuteReader())
-                        {
-                            while (reader.Read())
-                            {
-                                Admin user = new Admin();
-                                user.Username = reader["Username"].ToString();
-                                userList.Add(user);
-                            }
-                        }
-                    }
-                    connection.Close();
+        //            using (SqliteCommand cmd = new SqliteCommand(sql, connection))
+        //            {
+        //                using (SqliteDataReader reader = cmd.ExecuteReader())
+        //                {
+        //                    while (reader.Read())
+        //                    {
+        //                        Admin user = new Admin();
+        //                        user.Username = reader["Username"].ToString();
+        //                        userList.Add(user);
+        //                    }
+        //                }
+        //            }
+        //            connection.Close();
 
-                }
-            }
-            catch (Exception e)
-            {
-                //logg
-                throw;
-            }
-            return userList;
-        }
+        //        }
+        //    }
+        //    catch (Exception e)
+        //    {
+        //        //logg
+        //        throw;
+        //    }
+        //    return userList;
+        //}
     }
 }

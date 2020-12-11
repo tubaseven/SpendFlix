@@ -1,32 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\meliksah.ince\\source\\repos\\SpendFlix\\SpendFlix.Mvc\\SpendFlix.Mvc\\SpendFlix.Mvc.csproj": {}
+    "C:\\Users\\tugba.seven\\source\\repos\\SpendFlix\\SpendFlix.Mvc\\SpendFlix.Mvc\\SpendFlix.Mvc.csproj": {}
   },
   "projects": {
-    "C:\\Users\\meliksah.ince\\source\\repos\\SpendFlix\\SpendFlix.Mvc\\SpendFlix.Data\\SpendFlix.Data.csproj": {
+    "C:\\Users\\tugba.seven\\source\\repos\\SpendFlix\\SpendFlix.Mvc\\SpendFlix.Data\\SpendFlix.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\meliksah.ince\\source\\repos\\SpendFlix\\SpendFlix.Mvc\\SpendFlix.Data\\SpendFlix.Data.csproj",
+        "projectUniqueName": "C:\\Users\\tugba.seven\\source\\repos\\SpendFlix\\SpendFlix.Mvc\\SpendFlix.Data\\SpendFlix.Data.csproj",
         "projectName": "SpendFlix.Data",
-        "projectPath": "C:\\Users\\meliksah.ince\\source\\repos\\SpendFlix\\SpendFlix.Mvc\\SpendFlix.Data\\SpendFlix.Data.csproj",
-        "packagesPath": "C:\\Users\\meliksah.ince\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\meliksah.ince\\source\\repos\\SpendFlix\\SpendFlix.Mvc\\SpendFlix.Data\\obj\\",
+        "projectPath": "C:\\Users\\tugba.seven\\source\\repos\\SpendFlix\\SpendFlix.Mvc\\SpendFlix.Data\\SpendFlix.Data.csproj",
+        "packagesPath": "C:\\Users\\tugba.seven\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tugba.seven\\source\\repos\\SpendFlix\\SpendFlix.Mvc\\SpendFlix.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\meliksah.ince\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\tugba.seven\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "\\\\ntserver\\sharedtoall\\NugetServer": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -52,6 +50,10 @@
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
               "version": "[5.0.1, )"
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.7.335, )"
             }
           },
           "imports": [
@@ -69,41 +71,39 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\meliksah.ince\\source\\repos\\SpendFlix\\SpendFlix.Mvc\\SpendFlix.Mvc\\SpendFlix.Mvc.csproj": {
+    "C:\\Users\\tugba.seven\\source\\repos\\SpendFlix\\SpendFlix.Mvc\\SpendFlix.Mvc\\SpendFlix.Mvc.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\meliksah.ince\\source\\repos\\SpendFlix\\SpendFlix.Mvc\\SpendFlix.Mvc\\SpendFlix.Mvc.csproj",
+        "projectUniqueName": "C:\\Users\\tugba.seven\\source\\repos\\SpendFlix\\SpendFlix.Mvc\\SpendFlix.Mvc\\SpendFlix.Mvc.csproj",
         "projectName": "SpendFlix.Mvc",
-        "projectPath": "C:\\Users\\meliksah.ince\\source\\repos\\SpendFlix\\SpendFlix.Mvc\\SpendFlix.Mvc\\SpendFlix.Mvc.csproj",
-        "packagesPath": "C:\\Users\\meliksah.ince\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\meliksah.ince\\source\\repos\\SpendFlix\\SpendFlix.Mvc\\SpendFlix.Mvc\\obj\\",
+        "projectPath": "C:\\Users\\tugba.seven\\source\\repos\\SpendFlix\\SpendFlix.Mvc\\SpendFlix.Mvc\\SpendFlix.Mvc.csproj",
+        "packagesPath": "C:\\Users\\tugba.seven\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tugba.seven\\source\\repos\\SpendFlix\\SpendFlix.Mvc\\SpendFlix.Mvc\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\meliksah.ince\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\tugba.seven\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "\\\\ntserver\\sharedtoall\\NugetServer": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\meliksah.ince\\source\\repos\\SpendFlix\\SpendFlix.Mvc\\SpendFlix.Data\\SpendFlix.Data.csproj": {
-                "projectPath": "C:\\Users\\meliksah.ince\\source\\repos\\SpendFlix\\SpendFlix.Mvc\\SpendFlix.Data\\SpendFlix.Data.csproj"
+              "C:\\Users\\tugba.seven\\source\\repos\\SpendFlix\\SpendFlix.Mvc\\SpendFlix.Data\\SpendFlix.Data.csproj": {
+                "projectPath": "C:\\Users\\tugba.seven\\source\\repos\\SpendFlix\\SpendFlix.Mvc\\SpendFlix.Data\\SpendFlix.Data.csproj"
               }
             }
           }
@@ -141,7 +141,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

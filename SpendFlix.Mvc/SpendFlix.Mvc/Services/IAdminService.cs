@@ -5,7 +5,7 @@ namespace SpendFlix.Mvc.Services
 {
     public interface IAdminService
     {
-        List<Admin> GetUsers();
+        //List<Admin> GetUsers();
         List<Admin> AddUser();
     }
 }

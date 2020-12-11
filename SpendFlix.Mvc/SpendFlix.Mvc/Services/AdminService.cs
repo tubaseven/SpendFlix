@@ -13,14 +13,10 @@ namespace SpendFlix.Mvc.Services
             _adminRepository = adminRepository;
         }
 
-        public List<Admin> GetUsers()
-        {
-            return _adminRepository.GetUsers();
-        }
 
         public List<Admin> AddUser()
         {
-            return _adminRepository.Add();
+            return _adminRepository.GetUsers();
         }
 
     }
