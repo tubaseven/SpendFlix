@@ -9,13 +9,13 @@ namespace SpendFlix.Data
         private readonly IConfiguration _configuration;
         public SpendFlixContext(IConfiguration configuration)
         {
-            this._configuration = configuration;
+            _configuration = configuration;
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             //optionsBuilder.UseSqlite("Data Source = SpendFlix.db");
-            optionsBuilder.UseSqlite(this._configuration["DBConnectionString"]);
+            optionsBuilder.UseSqlite(_configuration["DBConnectionString"]);
         }
 
         //protected override void OnModelCreating(ModelBuilder modelBuilder)

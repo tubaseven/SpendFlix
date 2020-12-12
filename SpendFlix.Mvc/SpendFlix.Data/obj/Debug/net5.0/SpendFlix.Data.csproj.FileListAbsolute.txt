@@ -21,6 +21,11 @@ C:\Users\tugba.seven\source\repos\SpendFlix\SpendFlix.Mvc\SpendFlix.Data\obj\Deb
 C:\Users\tugba.seven\source\repos\SpendFlix\SpendFlix.Mvc\SpendFlix.Data\obj\Debug\net5.0\SpendFlix.Data.dll
 C:\Users\tugba.seven\source\repos\SpendFlix\SpendFlix.Mvc\SpendFlix.Data\obj\Debug\net5.0\ref\SpendFlix.Data.dll
 C:\Users\tugba.seven\source\repos\SpendFlix\SpendFlix.Mvc\SpendFlix.Data\obj\Debug\net5.0\SpendFlix.Data.pdb
+C:\Users\tugba.seven\source\repos\SpendFlix\SpendFlix.Mvc\SpendFlix.Data\obj\Debug\net5.0\SpendFlix.Data.csprojAssemblyReference.cache
+C:\Users\meliksah.ince\source\repos\SpendFlix\SpendFlix.Mvc\SpendFlix.Data\bin\Debug\net5.0\SpendFlix.Data.deps.json
+C:\Users\meliksah.ince\source\repos\SpendFlix\SpendFlix.Mvc\SpendFlix.Data\bin\Debug\net5.0\SpendFlix.Data.dll
+C:\Users\meliksah.ince\source\repos\SpendFlix\SpendFlix.Mvc\SpendFlix.Data\bin\Debug\net5.0\ref\SpendFlix.Data.dll
+C:\Users\meliksah.ince\source\repos\SpendFlix\SpendFlix.Mvc\SpendFlix.Data\bin\Debug\net5.0\SpendFlix.Data.pdb
 C:\Users\meliksah.ince\source\repos\SpendFlix\SpendFlix.Mvc\SpendFlix.Data\obj\Debug\net5.0\SpendFlix.Data.csprojAssemblyReference.cache
 C:\Users\meliksah.ince\source\repos\SpendFlix\SpendFlix.Mvc\SpendFlix.Data\obj\Debug\net5.0\SpendFlix.Data.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\meliksah.ince\source\repos\SpendFlix\SpendFlix.Mvc\SpendFlix.Data\obj\Debug\net5.0\SpendFlix.Data.AssemblyInfoInputs.cache
@@ -29,8 +34,3 @@ C:\Users\meliksah.ince\source\repos\SpendFlix\SpendFlix.Mvc\SpendFlix.Data\obj\D
 C:\Users\meliksah.ince\source\repos\SpendFlix\SpendFlix.Mvc\SpendFlix.Data\obj\Debug\net5.0\SpendFlix.Data.dll
 C:\Users\meliksah.ince\source\repos\SpendFlix\SpendFlix.Mvc\SpendFlix.Data\obj\Debug\net5.0\ref\SpendFlix.Data.dll
 C:\Users\meliksah.ince\source\repos\SpendFlix\SpendFlix.Mvc\SpendFlix.Data\obj\Debug\net5.0\SpendFlix.Data.pdb
-C:\Users\meliksah.ince\source\repos\SpendFlix\SpendFlix.Mvc\SpendFlix.Data\bin\Debug\net5.0\SpendFlix.Data.deps.json
-C:\Users\meliksah.ince\source\repos\SpendFlix\SpendFlix.Mvc\SpendFlix.Data\bin\Debug\net5.0\SpendFlix.Data.dll
-C:\Users\meliksah.ince\source\repos\SpendFlix\SpendFlix.Mvc\SpendFlix.Data\bin\Debug\net5.0\ref\SpendFlix.Data.dll
-C:\Users\meliksah.ince\source\repos\SpendFlix\SpendFlix.Mvc\SpendFlix.Data\bin\Debug\net5.0\SpendFlix.Data.pdb
-C:\Users\tugba.seven\source\repos\SpendFlix\SpendFlix.Mvc\SpendFlix.Data\obj\Debug\net5.0\SpendFlix.Data.csprojAssemblyReference.cache

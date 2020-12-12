@@ -24,9 +24,9 @@ namespace SpendFlix.Mvc.Controllers
 
         public IActionResult Index()
         {
-            _adminService.AddUser();
+            
             //_adminService.GetUsers();
-            return View();
+            return View(_adminService.AddUser());
         }
 
 
