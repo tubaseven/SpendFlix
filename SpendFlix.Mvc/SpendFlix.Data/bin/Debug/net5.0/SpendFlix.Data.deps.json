@@ -9,6 +9,7 @@
       "SpendFlix.Data/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "5.0.1",
+          "Microsoft.EntityFrameworkCore.Design": "5.0.1",
           "Microsoft.EntityFrameworkCore.Tools": "5.0.1",
           "MySql.Data.EntityFrameworkCore": "8.0.22",
           "MySqlConnector": "1.2.1",
