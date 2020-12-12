@@ -1,13 +1,10 @@
-﻿using SQLite;
-using System;
+﻿using System;
 
 namespace SpendFlix.Data.Models
 {
-    [Table("Post")]
 
     public class Post
     {
-        [PrimaryKey, AutoIncrement, Column("Id")]
         public int Id { get; set; }
         public string Title { get; set; }
         public string ImageLink { get; set; }

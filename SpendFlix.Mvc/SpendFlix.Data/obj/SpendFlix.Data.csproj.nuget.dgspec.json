@@ -1,25 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\meliksah.ince\\source\\repos\\SpendFlix\\SpendFlix.Mvc\\SpendFlix.Data\\SpendFlix.Data.csproj": {}
+    "C:\\Users\\tugba.seven\\source\\repos\\SpendFlix\\SpendFlix.Mvc\\SpendFlix.Data\\SpendFlix.Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\meliksah.ince\\source\\repos\\SpendFlix\\SpendFlix.Mvc\\SpendFlix.Data\\SpendFlix.Data.csproj": {
+    "C:\\Users\\tugba.seven\\source\\repos\\SpendFlix\\SpendFlix.Mvc\\SpendFlix.Data\\SpendFlix.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\meliksah.ince\\source\\repos\\SpendFlix\\SpendFlix.Mvc\\SpendFlix.Data\\SpendFlix.Data.csproj",
+        "projectUniqueName": "C:\\Users\\tugba.seven\\source\\repos\\SpendFlix\\SpendFlix.Mvc\\SpendFlix.Data\\SpendFlix.Data.csproj",
         "projectName": "SpendFlix.Data",
-        "projectPath": "C:\\Users\\meliksah.ince\\source\\repos\\SpendFlix\\SpendFlix.Mvc\\SpendFlix.Data\\SpendFlix.Data.csproj",
-        "packagesPath": "C:\\Users\\meliksah.ince\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\meliksah.ince\\source\\repos\\SpendFlix\\SpendFlix.Mvc\\SpendFlix.Data\\obj\\",
+        "projectPath": "C:\\Users\\tugba.seven\\source\\repos\\SpendFlix\\SpendFlix.Mvc\\SpendFlix.Data\\SpendFlix.Data.csproj",
+        "packagesPath": "C:\\Users\\tugba.seven\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tugba.seven\\source\\repos\\SpendFlix\\SpendFlix.Mvc\\SpendFlix.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\meliksah.ince\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\tugba.seven\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -44,17 +43,33 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
-            "Microsoft.Data.Sqlite.Core": {
+            "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.1, )"
             },
-            "Microsoft.EntityFrameworkCore.Sqlite": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[5.0.1, )"
             },
-            "sqlite-net-pcl": {
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
-              "version": "[1.7.335, )"
+              "version": "[5.0.1, )"
+            },
+            "MySql.Data.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.22, )"
+            },
+            "MySqlConnector": {
+              "target": "Package",
+              "version": "[1.2.1, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[5.0.0-alpha.2, )"
             }
           },
           "imports": [
@@ -72,7 +87,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

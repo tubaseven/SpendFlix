@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "SpendFlix.Business/1.0.0": {
+        "runtime": {
+          "SpendFlix.Business.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SpendFlix.Business/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

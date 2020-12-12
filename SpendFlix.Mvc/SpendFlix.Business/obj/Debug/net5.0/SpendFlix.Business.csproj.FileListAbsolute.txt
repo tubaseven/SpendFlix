@@ -1,0 +1,12 @@
+C:\Users\tugba.seven\source\repos\SpendFlix\SpendFlix.Mvc\SpendFlix.Business\bin\Debug\net5.0\SpendFlix.Business.deps.json
+C:\Users\tugba.seven\source\repos\SpendFlix\SpendFlix.Mvc\SpendFlix.Business\bin\Debug\net5.0\SpendFlix.Business.dll
+C:\Users\tugba.seven\source\repos\SpendFlix\SpendFlix.Mvc\SpendFlix.Business\bin\Debug\net5.0\ref\SpendFlix.Business.dll
+C:\Users\tugba.seven\source\repos\SpendFlix\SpendFlix.Mvc\SpendFlix.Business\bin\Debug\net5.0\SpendFlix.Business.pdb
+C:\Users\tugba.seven\source\repos\SpendFlix\SpendFlix.Mvc\SpendFlix.Business\obj\Debug\net5.0\SpendFlix.Business.csprojAssemblyReference.cache
+C:\Users\tugba.seven\source\repos\SpendFlix\SpendFlix.Mvc\SpendFlix.Business\obj\Debug\net5.0\SpendFlix.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tugba.seven\source\repos\SpendFlix\SpendFlix.Mvc\SpendFlix.Business\obj\Debug\net5.0\SpendFlix.Business.AssemblyInfoInputs.cache
+C:\Users\tugba.seven\source\repos\SpendFlix\SpendFlix.Mvc\SpendFlix.Business\obj\Debug\net5.0\SpendFlix.Business.AssemblyInfo.cs
+C:\Users\tugba.seven\source\repos\SpendFlix\SpendFlix.Mvc\SpendFlix.Business\obj\Debug\net5.0\SpendFlix.Business.csproj.CoreCompileInputs.cache
+C:\Users\tugba.seven\source\repos\SpendFlix\SpendFlix.Mvc\SpendFlix.Business\obj\Debug\net5.0\SpendFlix.Business.dll
+C:\Users\tugba.seven\source\repos\SpendFlix\SpendFlix.Mvc\SpendFlix.Business\obj\Debug\net5.0\ref\SpendFlix.Business.dll
+C:\Users\tugba.seven\source\repos\SpendFlix\SpendFlix.Mvc\SpendFlix.Business\obj\Debug\net5.0\SpendFlix.Business.pdb

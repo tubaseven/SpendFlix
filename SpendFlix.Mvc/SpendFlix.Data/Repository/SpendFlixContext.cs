@@ -1,10 +1,13 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using SpendFlix.Data.Models;
+using MySQL.Data.EntityFrameworkCore;
 
 namespace SpendFlix.Data
 {
-    public class SpendFlixContext : DbContext , ISpendFlixContext
+
+    public class SpendFlixContext : DbContext, ISpendFlixContext
     {
         private readonly IConfiguration _configuration;
         public SpendFlixContext(IConfiguration configuration)
@@ -12,22 +15,19 @@ namespace SpendFlix.Data
             _configuration = configuration;
         }
 
+        //public SpendFlixContext(DbContextOptions<SpendFlixContext> options)
+        //    : base("SpendFlix.db") { }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            //optionsBuilder.UseSqlite("Data Source = SpendFlix.db");
-            optionsBuilder.UseSqlite(_configuration["DBConnectionString"]);
+            optionsBuilder.UseMySQL(_configuration.GetConnectionString("ConnectionStrings:Default"));
+           
         }
-
-        //protected override void OnModelCreating(ModelBuilder modelBuilder)
-        //{
-
-        //    modelBuilder.Entity<Admin>()
-        //      .HasKey(p => new { p.Id)};
-        //}
-
         public DbSet<Admin> Admin { get; set; }
         public DbSet<Links> Links { get; set; }
         public DbSet<Post> Post { get; set; }
 
     }
 }
+
+
