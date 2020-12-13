@@ -1,10 +1,10 @@
-﻿@model List<SpendFlix.Data.Models.Admin>
+﻿@model List<SpendFlix.Entities.UserDTO>
 @{
     ViewData["Title"] = "Home Page";
 }
 
 
-@*@using (Html.BeginForm("Index", "Home", FormMethod.Post))
+@using (Html.BeginForm("Index", "Home", FormMethod.Post))
     {
 
         <div>
@@ -18,8 +18,8 @@
     {
         <td>@Model[i].Email</td>
         <td>@Model[i].HashPassword</td>
-        <td>@Model[i].Username</td>
-    }*@
+        <td>@Model[i].FullName</td>
+    }
 
 @*<div class="card bg-dark text-white">
         <img class="card-img" src="https://i.pinimg.com/originals/39/44/cf/3944cf195d709709af3d4009e5dbd6dd.jpg" alt="Card image">

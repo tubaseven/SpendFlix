@@ -2,7 +2,6 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using SpendFlix.Data.Models;
-using MySQL.Data.EntityFrameworkCore;
 
 namespace SpendFlix.Data
 {
@@ -20,12 +19,18 @@ namespace SpendFlix.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseMySQL(_configuration.GetConnectionString("ConnectionStrings:Default"));
-           
+            optionsBuilder.UseMySQL(_configuration.GetConnectionString("Default"));
+
         }
-        public DbSet<Admin> Admin { get; set; }
-        public DbSet<Links> Links { get; set; }
+        //private MySqlConnection GetConnection()
+        //{
+        //    return new MySqlConnection(ConnectionString);
+        //}
+        public DbSet<User> User { get; set; }
+        public DbSet<Product> Product { get; set; }
         public DbSet<Post> Post { get; set; }
+        public DbSet<MailList> MailList { get; set; }
+
 
     }
 }

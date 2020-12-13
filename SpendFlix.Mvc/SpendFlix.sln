@@ -7,9 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpendFlix.Mvc", "SpendFlix.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpendFlix.Data", "SpendFlix.Data\SpendFlix.Data.csproj", "{C15E8167-0E6C-468C-BF3A-949CBACF4632}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpendFlix.Business", "SpendFlix.Business\SpendFlix.Business.csproj", "{9FC310C5-8292-4D6E-A03B-A9F2C0C2F579}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpendFlix.Business", "SpendFlix.Business\SpendFlix.Business.csproj", "{9FC310C5-8292-4D6E-A03B-A9F2C0C2F579}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpendFlix.Entities", "SpendFlix.Entities\SpendFlix.Entities.csproj", "{4B6FED33-9C36-4E65-965A-920D15D7A7B2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpendFlix.Entities", "SpendFlix.Entities\SpendFlix.Entities.csproj", "{4B6FED33-9C36-4E65-965A-920D15D7A7B2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

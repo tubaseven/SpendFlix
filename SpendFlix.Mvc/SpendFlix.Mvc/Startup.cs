@@ -1,13 +1,11 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using SpendFlix.Business.Services;
 using SpendFlix.Data;
-using SpendFlix.Mvc.Services;
-using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
-using MySqlConnector;
+using SpendFlix.Data.Repository;
 
 namespace SpendFlix.Mvc
 {
@@ -24,12 +22,13 @@ namespace SpendFlix.Mvc
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            services.AddTransient<MySqlConnection>();
-            //services.AddSingleton<IAdminRepository, AdminRepository>();
-            //services.AddSingleton<IPostRepository, PostRepository>();
-            //services.AddSingleton<ILinksRepository, LinksRepository>();
+            services.AddDbContext<SpendFlixContext>();
+            //services.AddTransient<MySqlConnection>();
+            services.AddSingleton<IUserRepository, UserRepository>();
+            services.AddSingleton<IPostRepository, PostRepository>();
+            services.AddSingleton<IProductRepository, ProductRepository>();
             services.AddSingleton<ISpendFlixContext, SpendFlixContext>();
-            services.AddSingleton<IAdminService, AdminService>();
+            services.AddSingleton<IUserService, UserService>();
             services.AddSingleton<IProductService, ProductService>();
 
         }

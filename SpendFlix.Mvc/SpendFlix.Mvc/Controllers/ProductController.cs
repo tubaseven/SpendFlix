@@ -1,9 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using SpendFlix.Mvc.Services;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using SpendFlix.Business.Services;
 
 namespace SpendFlix.Mvc.Controllers
 {
@@ -18,7 +14,7 @@ namespace SpendFlix.Mvc.Controllers
         }
         public IActionResult GetProducts()
         {
-            return View();
+            return View(_productService.GetProducts());
         }
     }
 }

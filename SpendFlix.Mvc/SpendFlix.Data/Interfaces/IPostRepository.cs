@@ -1,12 +1,10 @@
-﻿using System;
+﻿using SpendFlix.Entities;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SpendFlix.Data.Repository
 {
-    public class IPostRepository
+    public interface IPostRepository
     {
+        List<PostDTO> GetPosts();
     }
 }

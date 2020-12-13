@@ -5,11 +5,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\SpendFlix.Business\SpendFlix.Business.csproj" />
     <ProjectReference Include="..\SpendFlix.Data\SpendFlix.Data.csproj" />
+    <ProjectReference Include="..\SpendFlix.Entities\SpendFlix.Entities.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Views\Images\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.10" />
   </ItemGroup>
 
 </Project>

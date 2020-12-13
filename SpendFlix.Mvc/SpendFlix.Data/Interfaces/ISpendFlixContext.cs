@@ -5,8 +5,10 @@ namespace SpendFlix.Data
 {
     public interface ISpendFlixContext
     {
-        DbSet<Admin> Admin { get; set; }
-        DbSet<Links> Links { get; set; }
+        DbSet<User> User { get; set; }
+        DbSet<Product> Product { get; set; }
         DbSet<Post> Post { get; set; }
+        DbSet<MailList> MailList { get; set; }
+
     }
 }

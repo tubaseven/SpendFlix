@@ -1,7 +1,26 @@
-﻿@*
+﻿@model List<SpendFlix.Entities.ProductDTO>
+@*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
+}
+
+
+@using (Html.BeginForm("GetProducts", "Product", FormMethod.Post))
+{
+
+    <div>
+
+        <input type="submit" value="Kaydet" name="segment-text" class="Index" />
+        <label></label>
+    </div>
+}
+
+@for (int i = 0; i < Model.Count; i++)
+{
+    <td>@Model[i].Link</td>
+    <td>@Model[i].Price</td>
+    <td>@Model[i].Id</td>
 }
 
 <div class="card-deck">

@@ -1,4 +1,4 @@
-﻿using SpendFlix.Data.Models;
+﻿using SpendFlix.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,10 +7,8 @@ using System.Threading.Tasks;
 
 namespace SpendFlix.Data.Repository
 {
-    public interface IAdminRepository
+    public interface IProductRepository
     {
-        List<Admin> GetUsers();
-        void AddUser();
-
+        List<ProductDTO> GetProducts();
     }
 }
