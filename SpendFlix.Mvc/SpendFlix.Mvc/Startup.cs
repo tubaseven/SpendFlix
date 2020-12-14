@@ -23,13 +23,15 @@ namespace SpendFlix.Mvc
         {
             services.AddControllersWithViews();
             services.AddDbContext<SpendFlixContext>();
-            //services.AddTransient<MySqlConnection>();
+            services.AddSingleton<ISpendFlixContext, SpendFlixContext>();
             services.AddSingleton<IUserRepository, UserRepository>();
             services.AddSingleton<IPostRepository, PostRepository>();
             services.AddSingleton<IProductRepository, ProductRepository>();
-            services.AddSingleton<ISpendFlixContext, SpendFlixContext>();
             services.AddSingleton<IUserService, UserService>();
+            services.AddSingleton<IPostService, PostService>();
             services.AddSingleton<IProductService, ProductService>();
+
+
 
         }
 

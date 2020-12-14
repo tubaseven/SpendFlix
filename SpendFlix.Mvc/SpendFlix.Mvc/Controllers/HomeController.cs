@@ -10,18 +10,20 @@ namespace SpendFlix.Mvc.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private readonly IUserService _adminService;
+        private readonly IPostService _postService;
 
 
-        public HomeController(ILogger<HomeController> logger, IUserService adminService)
+        public HomeController(ILogger<HomeController> logger, IUserService adminService, IPostService postService)
         {
             _logger = logger;
             _adminService = adminService;
+            _postService = postService;
         }
 
         public IActionResult Index()
-        {            
+        {
             //_adminService.GetUsers();
-            return View(_adminService.GetUsers());
+            return View(_postService.GetPosts());
         }
 
 

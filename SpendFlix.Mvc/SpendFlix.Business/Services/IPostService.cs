@@ -1,12 +1,10 @@
-﻿using System;
+﻿using SpendFlix.Entities;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SpendFlix.Business.Services
 {
     public interface IPostService
     {
+        List<PostDTO> GetPosts();
     }
 }
