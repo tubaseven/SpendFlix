@@ -12,7 +12,8 @@ namespace SpendFlix.Mvc.Controllers
         {
             _productService = productService;
         }
-        public IActionResult GetProducts()
+        [HttpGet("/products/{postId}")]
+        public IActionResult GetProducts([FromRoute] int postId)
         {
             return View(_productService.GetProducts());
         }

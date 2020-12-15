@@ -3,16 +3,65 @@
 @{
     ViewData["Title"] = "Home Page";
 }
-
-@*<div class="card bg-dark text-white">
-        <img class="card-img" src="https://i.pinimg.com/originals/39/44/cf/3944cf195d709709af3d4009e5dbd6dd.jpg" alt="Card image">
-        <div class="card-img-overlay">
-            <h5 class="card-title">Top 10 Series</h5>
-            <p class="card-text">Gel abla gel breaking bad ürünleri burdaaaa. Game of Thrones burda ne ararsan herşey burda. Dizi Film ürünleri bardak kupa falan filan</p>
-            <p class="card-text">Last updated 3 mins ago</p>
-        </div>
-    </div>*@
 <div class="container">
+
+    <div id="accordion">
+        <div class="card">
+            <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        <div class="btn-group">
+                            <button class="btn btn-secondary  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Series
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </div>
+                    </button>
+                </h5>
+            </div>
+
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+
+            </div>
+
+        </div>
+    </div>
+
+    @*&ensp;&ensp; &ensp; &ensp;&ensp; &ensp;&ensp;&ensp; &ensp;;
+        <div class="btn-group">
+            <button class="btn btn-secondary  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Series
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+        </div>
+        &ensp;&ensp; &ensp;
+
+
+        <div class="btn-group">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Movies
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+        </div>*@
+
+    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+
 
     @*Slider baslangıc*@
 
@@ -67,6 +116,10 @@
 
     @*Card görünümü*@
 
+    <blockquote class="alert-info text-right">
+        <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+    </blockquote>
+
     <div class="row row-cols-3 row-cols-md-3 g-1">
 
         @for (int i = 0; i < Model.Count; i++)
@@ -75,54 +128,19 @@
                 <div class="card">
                     <img src="@Model[i].ImageLink" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">@Model[i].Title</h5>
+
+                        <h5 class="card-title">
+                            @Html.ActionLink(@Model[i].Title, "GetProducts", "Product")
+
+                        </h5>
                         <p class="card-text">@Model[i].Description</p>
                     </div>
+
                 </div>
             </div>
         }
     </div>
+
 </div>
-@*<div class="card-deck">
-        <div class="card">
-            <img class="card-img-top" src="https://www.rubiconline.com/wp-content/uploads/2020/11/IMG_7046.jpg" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">@Model[int].Title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            </div>
-            <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
-            </div>
-        </div>
-        @for (int i = 1; i < Model.Count; i++)
-        {
-            <div class="card">
-                <img class="card-img-top" src="@Model[i].ImageLink" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">@Model[i].Title</h5>
-                    <p class="card-text">@Model[i].Description</p>
-                </div>
-                <div class="card-footer">
-                    <small class="text-muted">Last updated 3 mins ago</small>
-                </div>
-            </div>}
-
-    </div>*@
-
-
-
-@*<div class="container">
-       <div class="row">
-           <a href="#Queen">
-               <div class="col-md-6 offset-1">
-                   <img class="card-img-top" src="https://www.rubiconline.com/wp-content/uploads/2020/11/IMG_7046.jpg" alt="Card image cap">
-                   <div class="card-body">
-                       <p class="list-group-item list-group-item-primary">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                   </div>
-               </div>
-           </a>
-    </div>*@
-
-
 
 
