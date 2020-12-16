@@ -12,9 +12,9 @@ namespace SpendFlix.Business.Services
         {
             _productRepository = productRepository;
         }
-        public List<ProductDTO> GetProducts()
+        public List<ProductDTO> GetProducts(int postId)
         {
-            return _productRepository.GetProducts();
+            return _productRepository.GetProducts(postId);
         }
     }
 }

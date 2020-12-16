@@ -9,6 +9,6 @@ namespace SpendFlix.Data.Repository
 {
     public interface IProductRepository
     {
-        List<ProductDTO> GetProducts();
+        List<ProductDTO> GetProducts(int postId);
     }
 }

@@ -30,7 +30,11 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="d-block w-100" src="@Model[0].ImageLink" alt="First slide">
+                @*<img class="d-block w-100" src="@Model[0].ImageLink" alt="First slide">*@
+
+                @*<img class="d-block w-100" src="https://www.linkpicture.com/q/Pink-Cute-Chic-Vintage-90s-Virtual-Trivia-Quiz-Presentations-1.jpg" alt="First slide" >*@
+                
+                <a href="https://www.linkpicture.com/view.php?img=LPic5fda6fa8ed0b11563731901"> src="https://www.linkpicture.com/q/Pink-Cute-Chic-Vintage-90s-Virtual-Trivia-Quiz-Presentations-1.jpg" type="image"></a>
                 <div class="carousel-caption d-none d-md-block">
                     <h5>@Model[0].Title </h5>
                     <p>@Model[0].Description</p>
@@ -79,7 +83,9 @@
                     <div class="card-body">
 
                         <h5 class="card-title">
-                            @Html.ActionLink(@Model[i].Title, "GetProducts", "Product")
+                            @Html.ActionLink(@Model[i].Title, "GetProducts", "Product", new { id = Model[i].Id }, new { id = "@Id" })
+                            @Html.Hidden("Id", (object)ViewBag.Id)
+
 
                         </h5>
                         <p class="card-text">@Model[i].Description</p>

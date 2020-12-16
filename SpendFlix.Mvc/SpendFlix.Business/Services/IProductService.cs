@@ -5,6 +5,6 @@ namespace SpendFlix.Business.Services
 {
     public interface IProductService
     {
-        List<ProductDTO> GetProducts();
+        List<ProductDTO> GetProducts(int postId);
     }
 }
