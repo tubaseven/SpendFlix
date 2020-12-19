@@ -4,7 +4,7 @@
 *@
 
 
-<div class="card-deck">
+<div class="row row-cols-4 row-cols-md-4 g-1">
 
     @foreach (var item in Model)
     {
@@ -14,13 +14,14 @@
                 <h5 class="card-title">@item.Title</h5>
                 <p class="card-text">@item.Description</p>
             </div>
-            <div class="card-footer">
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-                <a href="#" class="badge badge-info m-3">$9.99</a>
+            <div class="card-footer bg-light">
+                <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                    <a href="#" class="btn btn-success m-0"><b>Buy Now!</b> &nbsp; <span class="badge bg-warning text-dark"><b> @item.Price $</b></span> </a>
+                </div>
+
             </div>
         </div>
     }
-
-
+    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
 </div>
 
